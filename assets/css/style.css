@@ -1,0 +1,182 @@
+@import url("./clash-display.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+:root {
+  --background: #000f19;
+  --primary: #7c2ae8;
+  --yellow: #ffab4c;
+}
+
+::selection {
+  background-color: var(--yellow);
+  color: var(--background);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background);
+  color: #fff;
+  font-family: "ClashDisplay-Variable";
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+.highlight-link {
+  color: var(--primary);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.highlight-link:hover {
+  color: var(--background);
+}
+
+.highlight-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #7c2ae8;
+  z-index: -1;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease;
+}
+.highlight-link:hover::before {
+  color: var(--background);
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--yellow);
+}
+
+/* Header Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  /* background-color: rgba(0, 255, 255, 0.466); */
+}
+
+nav .logo {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1.8rem;
+  color: var(--yellow) !important;
+}
+
+nav .nav-links .nav-link {
+}
+
+.intro {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro .highlight-link {
+  margin: 0 0.5rem;
+}
+
+.intro-left {
+  /* background-color: #ffab4c; */
+  height: 100%;
+  /* width: 100%; */
+  line-height: 2.4rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.intro-left .resume-btn {
+  border: 0.2rem solid var(--primary);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  box-shadow: 0.4rem 0.4rem 0 var(--primary);
+}
+
+.intro-left h1 {
+  font-size: 5rem;
+}
+
+.intro-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.intro-right img {
+  border-radius: 1.5rem;
+  width: 80%;
+}
+
+/* SKILLS */
+.skills {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .skill-head {
+  /* width: 30%; */
+  display: inline;
+  font-weight: 300;
+}
+
+.skills .skill-sec {
+  margin-bottom: 2rem;
+}
+
+.skills ul {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills ul li {
+  background-color: var(--primary);
+  /* color: var(--background); */
+  padding: 1rem;
+  border-radius: 1rem;
+}
