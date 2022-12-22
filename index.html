@@ -10,60 +10,199 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="#">Gaurav</a>
-            <ul class="nav-links">
-                <li class="nav-link highlight-link"><a href="#skills">Skills</a></li>
-                <li class="nav-link highlight-link"><a href="#skills">Projects</a></li>
-                <li class="nav-link highlight-link"><a href="#skills">Blogs</a></li>
-            </ul>
-        </nav>
-        <div class="intro">
-            <div class="intro-left">
-                <h1>Hi, I am <span class="highlight">Gaurav</span></h1>
-                <p>I am a Computer Engneering Student, aspiring to a be Full Stack Developer.In my free time i make
-                    content
-                    for my
-                    <a class="highlight-link" href="">Twitter</a> and <a class="highlight-link" href="">Instagram</a>
-                    page
-                    and write
-                    blog on <a class="highlight-link" href="">Hashnode</a> and <a class="highlight-link"
-                        href="">DEV.to</a>
-                </p>
-
-                <a href="#" class="resume-btn">Get Resume</a>
-            </div>
-            <div class="intro-right">
-                <img src="./assets/images/DP_1.jpg" alt="">
-            </div>
+    <nav>
+        <div class="logo_container">
+            <h1 class="logo">Gaurav_</h1>
         </div>
-    </header>
-    <section class="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skill-sec">
-            <h3 class="skill-head">Tehnical Skills</h3>
-            <ul>
+        <div class="burger_container">
+            <span class="burger_span"></span>
+            <span class="burger_span"></span>
+        </div>
+        <ul class="nav_links_container ">
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blogs</a></li>
+        </ul>
+    </nav>
+    <!-- >>> INTRO SECTION <<< -->
+    <section class="intro_section">
+        <div class="left_section">
+            <h2>Hi, I'm <span>Gaurav</span></h2>
+            <p>I’m a Front-End Developer, with a goal to be Full-Stack JavaScript Developer. in my free time i make
+                content on <a class="highlight" href="">Instagram</a> and <a class="highlight" href="">Twitter</a> , and
+                also i write blogs on <a class="highlight" href="">Dev.to</a> and <a class="highlight"
+                    href="">Hashnode</a>
+            </p>
+            <a class="btn" href="">Get Resume</a>
+        </div>
+        <div class="right_section">
+            <img src="./assets/images/DP_1.jpg" alt="">
+        </div>
+    </section>
+    <!-- >>> SKILLS SECTION <<< -->
+    <section class="skills_section">
+        <div class="section_intro">
+            <h3 class="intro_title">Skills</h3>
+        </div>
+        <div class="skills_container_inner">
+            <h4 class="skills_title">Technical Skills</h4>
+            <!-- TECH SKILLS -->
+            <ul class="skills_container">
                 <li>HTML/CSS</li>
-                <li>Bootstrap</li>
                 <li>JavaScript</li>
+                <li>jQuery</li>
                 <li>Tailwind CSS</li>
-                <li>ReactJS</li>
+                <li>ReactJs</li>
             </ul>
         </div>
-        <div class="skill-sec">
-            <h3 class="skill-head">Design Tools</h3>
-            <ul>
-                <li>Figma</li>
+        <div class="skills_container_inner">
+            <h4 class="skills_title">Design Tools</h4>
+            <!-- TECH SKILLS -->
+            <ul class="skills_container">
                 <li>Adobe Photoshop</li>
                 <li>Canva</li>
+                <li>Figma</li>
             </ul>
         </div>
     </section>
-    <section class="projects">
-        <h2 class="section-title">Projects</h2>
+    <!-- >>> PROJECTS SECTION <<< -->
+    <section class="projects_section">
+        <div class="section_intro">
+            <h3 class="intro_title">Projects</h3>
+        </div>
+        <div class="projects_container">
+            <!-- SINGLE PROJECT -->
+            <div class="single_project">
+                <div class="project_img project_one">
+                </div>
+                <div class="project_details">
+                    <h4 class="project_title">Expense Tracker</h4>
+                    <p class="project_description">
+                        This is a Simple Expense Tracker which takes Amount and showes it in a list, at the top it shows
+                        total expense
+                    </p>
+                    <ul class="project_tech">
+                        <li>React Js</li>
+                        <li>Daisy UI(Tailwind CSS)</li>
+                        <li>Firebase</li>
+                        <li>PWA</li>
+                    </ul>
+
+                    <div class="project_links">
+                        <a href="https://github.com/Gaurav492/expense-tracker">Github</a>
+                        <a href="https://ex-cal.netlify.app/">Live Link</a>
+                    </div>
+                </div>
+            </div>
+            <!-- SINGLE PROJECT -->
+            <div class="single_project">
+                <div class="project_img project_two">
+                </div>
+                <div class="project_details">
+                    <h4 class="project_title">Plantery</h4>
+                    <p class="project_description">
+                        Plantery is an E-commerce site for Pant Nurseries that fatches the product data from Commerce JS
+                    </p>
+                    <ul class="project_tech">
+                        <li>React Js</li>
+                        <li>Css/Bootstrap</li>
+                        <li>Commerce JS</li>
+                    </ul>
+
+                    <div class="project_links">
+                        <a href="https://github.com/Gaurav492/plantery-react">Github</a>
+                        <a href="https://plantery-react.netlify.app/">Live Link</a>
+                    </div>
+                </div>
+            </div>
+            <!-- SINGLE PROJECT -->
+            <div class="single_project">
+                <div class="project_img project_three">
+                </div>
+                <div class="project_details">
+                    <h4 class="project_title">Old Portfolio</h4>
+                    <p class="project_description">
+                        APais is Dymanic Site Which was made using Angular where each api is a saprate component and
+                        data was fetched usig Angular Services.
+                    </p>
+                    <ul class="project_tech">
+                        <li>Angular</li>
+                        <li>Css</li>
+                        <li>API</li>
+                    </ul>
+
+                    <div class="project_links">
+                        <a href="#">Github</a>
+                        <a href="#">Live Link</a>
+                    </div>
+                </div>
+            </div>
+            <!-- SINGLE PROJECT -->
+            <div class="single_project">
+                <div class="project_img project_four">
+                </div>
+                <div class="project_details">
+                    <h4 class="project_title">Matrac</h4>
+                    <p class="project_description">
+                        APais is Dymanic Site Which was made using Angular where each api is a saprate component and
+                        data was fetched usig Angular Services.
+                    </p>
+                    <ul class="project_tech">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>JavaScript(PWA)</li>
+                    </ul>
+
+                    <div class="project_links">
+                        <a href="#">Github</a>
+                        <a href="#">Live Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- >>> BLOGS SECTION <<< -->
+    <section class="blogs_section">
+        <div class="section_intro">
+            <h3 class="intro_title">Blogs <span class="section_tagline">[From Hashnode]</span></h3>
+        </div>
+        <div class="blogs_container">
+            <!-- <div class="single_blog">
+                <div class="blog_img">
+                    <img src="./assets/images/blog_thumb.png" alt="">
+                </div>
+                <div class="blog_link">
+                    <a href="#">Read More</a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- >>> FOOTER <<< -->
+    <footer>
+        <div class="footer_link_container">
+            <h4 class="footer_title">Socials</h4>
+            <ul>
+                <li><a href="">Github</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer_link_container">
+            <h4 class="footer_title">Contact</h4>
+            <ul>
+                <li><a href="">gauravvala492@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer_link_container">
+            <h4 class="footer_title">Blogs</h4>
+            <ul>
+                <li><a href="">Hashnode</a></li>
+                <li><a href="">Dev.to</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/app.js"></script>
 </body>
 
 </html>
