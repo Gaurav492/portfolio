@@ -1,16 +1,9 @@
-@import url("./clash-display.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
-
 :root {
   --background: #000f19;
   --primary: #7c2ae8;
   --yellow: #ffab4c;
   --box-shadow: 0.25rem 0.25rem 0rem #7c2ae8;
-  --inter-variable: "Inter", sans-serif;
-  --clash-variable-light: "ClashDisplay-Light";
-  --clash-variable-regular: "ClashDisplay-Regular";
-  --clash-variable-medium: "ClashDisplay-Medium";
-  --clash-variable-bold: "ClashDisplay-Bold";
+  --clash-font: "Clash Display", sans-serif;
 }
 
 ::selection {
@@ -30,7 +23,7 @@ html {
 body {
   background-color: var(--background);
   color: #fff;
-  font-family: var(--clash-variable-medium);
+  font-family: var(--clash-font);
   width: 70%;
   margin: 0 auto;
   padding: 0;
@@ -111,7 +104,6 @@ section {
 
 .section_tagline {
   font-size: 1rem;
-  font-family: var(--clash-variable-light);
   color: #7c2ae8;
 }
 
@@ -147,7 +139,6 @@ nav {
 }
 .logo {
   font-size: 3rem;
-  font-family: var(--clash-variable-medium);
 }
 
 .nav_links_container {
@@ -156,7 +147,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 40px;
-  font-family: var(--clash-variable-light);
   transition: all 0.2s ease;
 }
 
@@ -180,7 +170,6 @@ nav {
 }
 
 .left_section h2 {
-  font-family: var(--clash-variable-bold);
   text-transform: uppercase;
   font-size: 5rem;
 }
@@ -192,7 +181,6 @@ nav {
 .left_section p {
   font-size: 2rem;
   text-align: justify;
-  font-family: var(--clash-variable-light);
 }
 
 .right_section {
@@ -215,7 +203,6 @@ nav {
   margin: 30px 0;
 }
 .skills_title {
-  font-family: var(--clash-variable-light);
   margin: 10px 0;
   letter-spacing: 2px;
 }
@@ -287,7 +274,6 @@ nav {
 }
 .project_description {
   font-size: 1.5rem;
-  font-family: var(--clash-variable-light);
 }
 .project_title {
   font-size: 2.2rem;
@@ -371,12 +357,10 @@ footer {
 .footer_title {
   color: var(--yellow);
   font-size: 2.4rem;
-  font-family: var(--clash-variable-light);
   letter-spacing: 2px;
 }
 footer ul li a {
   color: #fff;
-  font-family: var(--clash-variable-light);
 }
 
 /* >>> MEDIA QUERIES <<< */
@@ -492,8 +476,6 @@ footer ul li a {
   }
   .project_tech li {
     color: var(--background);
-  }
-  .project_links a {
   }
   .blogs_container {
     grid-template-columns: repeat(1, 1fr);
