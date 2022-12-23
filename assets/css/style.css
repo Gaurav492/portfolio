@@ -245,6 +245,7 @@ nav {
 }
 .project_img {
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 200px;
   width: 100%;
@@ -357,6 +358,7 @@ nav {
 footer {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 .footer_link_container:nth-of-type(2) {
@@ -404,7 +406,6 @@ footer ul li a {
     font-size: 2rem;
   }
 }
-
 @media (max-width: 800px) {
   body {
     width: 85%;
@@ -502,5 +503,25 @@ footer ul li a {
     background-color: rgba(32, 32, 32, 0.103);
     height: 30%;
     bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .project_img {
+    height: 200px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer_link_container:nth-of-type(2) {
+    text-align: start;
+  }
+  .footer_link_container:nth-of-type(3) {
+    text-align: start;
+  }
+}
+@media (max-width: 390px) {
+  .project_img {
+    height: 180px;
   }
 }
